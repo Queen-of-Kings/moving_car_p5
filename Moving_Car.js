@@ -15,10 +15,23 @@ function draw() {
   background(135, 206, 235);
 
   // ===== BEGIN BILLBOARD HERE =====
-  
+     stroke('#E9AD2F'); //sign pole
+  strokeWeight(5); //pole weight
+  line(300, 300, 300, 150);//pole
+  stroke('#DA841C');//sign outline
+   fill('rgb(255,255,255)');
+   strokeWeight(5);
+  rect(250, 150, 110,-70);
+  noStroke("black")
+  fill("black")
+  textSize(20)
+  text('Car Crash', 260,110)
+  text('Guaranteed', 253,140)
+ 
   // ===== END BILLBOARD HERE =====
 
   // ===== DRAW GRASS =====
+  noStroke();
   fill(34, 139, 34); // Green grass
   rect(0, height / 2 + 50, width, height);
 
